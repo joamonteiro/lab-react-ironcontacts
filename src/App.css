@@ -1,5 +1,16 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+}
+
+.App h1{
+  background-color: rgb(131, 122, 0);
+  color: #FFF;
+  width: 98vw;
+  margin-top: 0;
+  padding: 0.3rem;
 }
 
 .App-logo {
@@ -35,4 +46,85 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list-i img{
+  width: 8rem; /* width of container */
+  height: 8rem; /* height of container */
+  object-fit: cover;
+}
+
+table{
+  width: 40vw;
+  border-collapse: collapse;
+  margin-bottom: 20vh;
+}
+
+.App span{
+  margin-bottom: 3vh;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App span button, button{
+  margin: 0 0.2vw 0 0.2vw;
+  border-style: none;
+  border-radius: 0.2rem;
+  background-color: rgba(189, 176, 0, 0.74);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-weight: 400;
+}
+
+.App span button:hover{
+  background-color: rgb(189, 176, 0);
+}
+
+.App span .r-button{
+  margin: 0 0.2vw 0 0.2vw;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  color: rgb(189, 176, 0);
+  text-decoration: underline;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.App span .r-button:hover{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.App td{
+  padding: 0.2rem 1vw 0.2rem 1vw;
+}
+
+.title-td td{
+  padding: 2vh 0 2vh 0;
+}
+
+.title-td:nth-child(odd) {
+  color: rgb(131, 122, 0);
+}
+
+.title-td:nth-child(even) {
+  color: rgb(189, 176, 0);
+}
+
+td{
+  border-top: 1px solid rgb(189, 176, 0);
+  padding: 0;
+}
+
+.description-td td{
+  text-transform: lowercase;
+  font-size: 0.9rem;
+  color: rgba(75, 70, 1, 0.774);
+}
+
+.contact-name{
+  text-align: left;
+  padding-left: 0.8rem !important;
 }
